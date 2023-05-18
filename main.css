@@ -1,0 +1,94 @@
+body {
+    font-family: "Lato",sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header div{
+    background: rgba(0,0,0,.75);
+    color: white;
+    display: flex;
+    position: sticky;
+    z-index: 1000;
+    width: 100%;
+    height: 4em;
+}
+header ul {
+    display: flex;
+    padding: 9.8px 17.5px;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+#telefone {
+    background: black;
+    height: 40px;
+}
+#telefone div {
+    background: black;
+    width: 40%;
+    height: 20px;
+    color: white;
+    float: right;
+    padding-top: 10px;
+}
+#Home, #Cursos, #Unidades, #Blog, #Sobre-Nos, #Mais, #Restrito {
+    padding: 9.8px 17.5px;
+}
+#banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+#saiba-mais {
+    color: white;
+    position: absolute;
+}
+#Ensino {
+    margin-top: 400px;
+    padding-left: 20px;
+    padding-top: 40px;
+    padding-right: 20px;
+    text-align: center;
+}
+#Ensino h2 {
+    font-size: 2.5em;
+    font-weight: 900;
+    color: #111;
+    text-rendering: optimizeLegibility;
+}
+#Curso ul li{
+    display: flex;
+    flex-direction: row;
+}
+.Barra-Topo {
+    position: sticky;
+    margin-top: 40px;
+    background-color: rgba(0,0,0,.75);
+    z-index: 1000;
+    box-sizing: border-box;
+}
+.button {
+    background: #40aa0b;
+    margin: 42px;
+    padding: 14px;
+    border-radius: 8px;
+    float: left;
+}
+.container {
+    width: 100%;
+    display: grid;
+    justify-content: space-around;
+}
