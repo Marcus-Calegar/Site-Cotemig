@@ -1,10 +1,10 @@
-body {
+body{
     width: 100%;
     font-family: "Lato",sans-serif;
     margin: 0;
     padding: 0;
 }
-header {
+header{
     background: rgba(0,0,0,.75);
 }
 header div{
@@ -16,15 +16,15 @@ header div{
     width: 100%;
     height: 4em;
 }
-header ul {
+header ul{
     display: flex;
     padding: 9.8px 17.5px;
 }
-a {
+a{
     color: white;
     text-decoration: none;
 }
-h2 {
+h2{
     display: block;
     font-size: 1.5em;
     margin-block-start: 0.83em;
@@ -33,11 +33,11 @@ h2 {
     margin-inline-end: 0px;
     font-weight: bold;
 }
-#telefone {
+#telefone{
     background: black;
     height: 40px;
 }
-#telefone div {
+#telefone div{
     background: black;
     width: 40%;
     height: 20px;
@@ -45,13 +45,13 @@ h2 {
     float: right;
     padding-top: 10px;
 }
-#Home, #Unidades, #Blog, #Sobre-Nos, #Restrito {
+#Home, #Unidades, #Blog, #Sobre-Nos, #Restrito{
     padding: 9.8px 17.5px;
 }
-#Cursos,#Mais {
+#Cursos,#Mais{
     padding-top: 0%;
 }
-#banner {
+#banner{
     position: absolute;
     top: 0;
     left: 0;
@@ -59,22 +59,31 @@ h2 {
     object-fit: cover;
     z-index: -1;
 }
-#saiba-mais {
+#saiba-mais{
     color: white;
     position: absolute;
 }
-#Ensino {
+#Ensino{
     margin-top: 400px;
     padding-left: 20px;
     padding-top: 40px;
     padding-right: 20px;
     text-align: center;
 }
-#Ensino h2 {
+#Ensino h2{
     font-size: 2.5em;
     font-weight: 900;
     color: #111;
-    text-rendering: optimizeLegibility;
+}
+#Ensino div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#Ensino div div{
+    display: flex;
+    flex-direction: column;
 }
 #Curso,#Graduacoes ul li{
     display: flex;
@@ -83,36 +92,71 @@ h2 {
 #Graduacoes img{
     border-radius: .75em;
 }
-#Curso img {
+#Curso img{
     border-radius: .75em;
 }
-#Barra-topo {
+#Curso div ul li{
+    display: flex;
+}
+#Barra-topo{
     position: fixed;
     background-color: rgba(0,0,0,.75);
     z-index: 1000;
     box-sizing: border-box;
 }
-#Nossas-Unidades img {
+#Nossas-Unidades img{
     border-radius: 2%;
 
 }
-#Nossas-Unidades {
+#Nossas-Unidades{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
 }
-#Nossas-Unidades p {
+#Nossas-Unidades p{
     margin: 0%;
     text-align: left;
 }
-.container div h2 {
+#Atendimento{
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2e2e2e;
+}
+#Atendimento a{
+    color: #40aa0b;
+    font-size: 32px;
+}
+#Atendimento::before{
+    width: 3em;
+    height: 3em;
+    text-indent: -9999px;
+    border-radius: 50%;
+    background: url(ligar.svg) no-repeat center center/cover;
+}
+#Ver-tudo{
+    width: 115px;
+    padding: 1em 0;
+    text-align: right;
+    background: none;
+    color: #424242;
+
+    display: block;
+    width: 100%;
+    padding: 1em;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 8px;
+}
+.container div h2{
     text-align: center;
     font-size: 40px;
     margin-bottom: 40px;
     margin-top: 0%;
 }
-.container div p {
+.container div p{
     text-align: center;
     font-size: 18px;
     margin-top: 0%;
@@ -120,32 +164,30 @@ h2 {
     margin-left: 191.5px;
     margin-right: 191.5px;
 }
-.button {
+.button{
     background: #40aa0b;
     margin: 42px;
     padding: 14px;
     border-radius: 8px;
     float: left;
 }
-.container {
+.container{
     width: 100%;
     display: grid;
     justify-content: space-around;
 }
-.seta-direita {
+.seta-direita{
     position: relative;
-    right: 0;
     display: block;
     width: 12px;
     height: 15px;
     justify-self: end;
     align-self: normal;
+    margin: 0%;
     margin-top: 1.3em;
-    background: url(arrow-right.svg) no-repeat center right/90%;
-    -webkit-transition: all .2s linear;
-    transition: all .2s linear;
+    background: url(/Assets/imagens/arrow-right.svg) no-repeat center right/90%;
 }
-.seta-baixo {
+.seta-baixo{
     content: "";
     display: flex;
     align-items: center;
@@ -153,7 +195,5 @@ h2 {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background: url(arrow-down.png) #2e2e2e no-repeat center center/40%;
-    -webkit-transition: background-color .2s linear;
-    transition: background-color .2s linear;
+    background: url(/Assets/imagens/arrow-down.png) #2e2e2e no-repeat center center/40%;
 }
