@@ -50,8 +50,14 @@ footer {
 }
 
 footer .container {
-    margin: 0px 40.5px;
-    padding: 40px 16px 32px;
+    margin-left: 90.5px;
+    margin-right: 90.5px;
+    padding: 2.5em 1em 2em;
+    display: grid;
+    grid-template-areas:
+        "a a b"
+        "c d e";
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 footer ul li {
@@ -62,13 +68,6 @@ footer ul li {
 footer a {
     background-color: #40aa0b;
     border-radius: 8px;
-}
-
-footer .container {
-    grid-template-areas:
-        "a a b"
-        "c d e";
-    grid-template-columns: 1fr 1fr 1fr;
 }
 
 #telefone {
@@ -156,54 +155,37 @@ footer .container {
 }
 
 #Ensino div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-#Ensino div div {
+    align-items: center;
     display: flex;
     flex-direction: column;
     border-radius: 0.75em;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, .1);
+
+    width: 284px;
 }
 
-#Curso img,
+#Curso figure img,
 #Graduacoes img {
-    width: 100%;
+    width: 284px;
 }
 
-#Curso div div,
-#Graduacoes div div {
-    box-shadow: none;
-}
-
-#Curso div,
-#Graduacoes div {
-    width: 100%;
-}
-
-#Curso div ul img,
-#Graduacoes div ul img {
+#Curso ul img,
+#Graduacoes ul img {
     border-radius: 8px;
     width: 40px;
 }
 
-#Curso,
+#Curso ul li,
 #Graduacoes ul li {
     display: flex;
     flex-direction: row;
+    text-align: left;
 }
 
 #Graduacoes img,
 #Curso img {
     border-top-right-radius: 0.75em;
     border-top-left-radius: 0.75em;
-}
-
-#Curso div ul li {
-    display: flex;
 }
 
 #Barra-topo {
@@ -363,7 +345,8 @@ footer .container {
     grid-area: e;
 }
 
-#rede-social-faculdade a, #rede-social-colegio a {
+#rede-social-faculdade a,
+#rede-social-colegio a {
     background-color: #151515;
     text-decoration: none;
     color: #424242;
