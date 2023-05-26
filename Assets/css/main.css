@@ -191,7 +191,8 @@ footer a {
     transition: all .2s linear;
 }
 
-#Curso h4:hover, #Graduacoes h4:hover {
+#Curso h4:hover,
+#Graduacoes h4:hover {
     cursor: pointer;
     color: #40aa0b;
 }
@@ -627,19 +628,23 @@ footer a {
     padding-top: 32px;
 }
 
-.Facebook img, .Instagram img {
+.Facebook img,
+.Instagram img {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 22px;
     padding-right: 22px;
     border-radius: 8px;
 }
+
 .Facebook img {
     background-color: #4460a0;
 }
+
 .Instagram img {
     background-color: white;
 }
+
 .Linkedin img {
     background-color: #007ab9;
     padding-top: 6px;
@@ -648,6 +653,7 @@ footer a {
     padding-right: 18px;
     border-radius: 8px;
 }
+
 .Twitter img {
     background-color: #00aaec;
     padding-top: 12.5px;
