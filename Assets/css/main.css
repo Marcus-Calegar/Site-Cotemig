@@ -14,12 +14,13 @@ body {
 
 header {
     background: rgba(0, 0, 0, .75);
+    position: sticky;
+    top: 0;
 }
 
 header div {
     color: white;
     display: inline-flex;
-    position: sticky;
     vertical-align: middle;
     z-index: 1000;
     width: 100%;
@@ -56,7 +57,6 @@ footer {
 }
 
 footer .container {
-
     padding: 2.5em 1em 2em;
     display: grid;
     grid-template-areas:
@@ -88,6 +88,11 @@ footer a {
     color: white;
     float: right;
     padding-top: 10px;
+}
+
+#Barra-topo {
+    z-index: 1000;
+    box-sizing: border-box;
 }
 
 #Home,
@@ -166,7 +171,6 @@ footer a {
     flex-direction: column;
     border-radius: 0.75em;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, .1);
-
     width: 284px;
 }
 
@@ -192,13 +196,6 @@ footer a {
 #Curso img {
     border-top-right-radius: 0.75em;
     border-top-left-radius: 0.75em;
-}
-
-#Barra-topo {
-    position: fixed;
-    background-color: rgba(0, 0, 0, .75);
-    z-index: 1000;
-    box-sizing: border-box;
 }
 
 #Nossas-Unidades img {
@@ -297,11 +294,11 @@ footer a {
     text-align: left;
 }
 
-#links div ul li strong {
-    margin-bottom: 15px;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 0px 15px;
+#links div ul li {
+    margin: 5px 0;
+    padding: 0 3em 0 0;
+    padding-right: 0px;
+    list-style: none;
 }
 
 #possibilidades {
@@ -430,4 +427,16 @@ footer a {
     padding-bottom: 48px;
 }
 
-.li-negrito {}
+.li-negrito {
+    padding-right: 48px;
+    margin-bottom: 5px;
+    height: 37px;
+}
+
+.li-negrito strong {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0px 15px;
+    margin-bottom: 15px;
+}
