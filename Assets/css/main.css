@@ -15,6 +15,7 @@ body {
 header {
     background: rgba(0, 0, 0, .75);
     position: sticky;
+    z-index: 10;
     top: 0;
 }
 
@@ -163,6 +164,11 @@ footer a {
     color: #111;
 }
 
+#Ensino h4 {
+    font-size: 14px;
+    font-style: normal;
+}
+
 #Ensino div div {
     display: flex;
     align-items: center;
@@ -181,14 +187,23 @@ footer a {
     margin-left: 150px;
     margin-right: 50px;
     margin-top: -20px;
+    border-radius: 8px;
+    transition: all .2s linear;
+}
+
+#Curso h4:hover, #Graduacoes h4:hover {
+    cursor: pointer;
+    color: #40aa0b;
 }
 
 #Graduacoes {
-    margin-top: 40px;
+    margin-top: 30px;
+    border-radius: 8px;
 }
 
 #Curso-img {
     background: url(/Assets/imagens/Curso.png);
+    background-position: 50%;
     background-size: cover;
     transition: all .2s linear;
     height: 175px;
@@ -197,22 +212,35 @@ footer a {
     margin-bottom: 5px;
 }
 
-#Curso-img h3,
-#Graduacoes-img h3 {
+#Curso-img h3 {
+    border-top-right-radius: 0.75em;
+    border-top-left-radius: 0.75em;
+    margin: 0;
     font-size: 20px;
     color: white;
-    padding: 1em;
-    margin-top: 115px;
-    margin-right: 15px;
+    padding-top: 151px;
+    padding-right: 41px;
+    padding-left: 11px;
     text-align: left;
+    box-shadow: inset 0px -5px 32px 11px black;
 }
 
 #Graduacoes-img h3 {
-    margin-right: 129px;
+    border-top-right-radius: 0.75em;
+    border-top-left-radius: 0.75em;
+    margin: 0;
+    font-size: 20px;
+    color: white;
+    padding-top: 151px;
+    padding-right: 160px;
+    padding-left: 11px;
+    text-align: left;
+    box-shadow: inset 0px -5px 32px 11px black;
 }
 
 #Graduacoes-img {
     background: url(/Assets/imagens/Graduacoes.png);
+    background-position: 50%;
     background-size: cover;
     transition: all .2s linear;
     height: 175px;
@@ -399,6 +427,7 @@ footer a {
 }
 
 #links a {
+    width: 197px;
     display: block;
     padding: 5px 15px;
     font-size: .875em;
@@ -407,6 +436,10 @@ footer a {
     border-radius: 8px;
     background-color: #151515;
     text-align: left;
+}
+
+#links a:hover {
+    background: #212121;
 }
 
 #links div ul li {
@@ -588,4 +621,38 @@ footer a {
     font-weight: bold;
     padding: 0px 15px;
     margin-bottom: 15px;
+}
+
+.container div h2 {
+    padding-top: 32px;
+}
+
+.Facebook img, .Instagram img {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 22px;
+    padding-right: 22px;
+    border-radius: 8px;
+}
+.Facebook img {
+    background-color: #4460a0;
+}
+.Instagram img {
+    background-color: white;
+}
+.Linkedin img {
+    background-color: #007ab9;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-radius: 8px;
+}
+.Twitter img {
+    background-color: #00aaec;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    padding-left: 22px;
+    padding-right: 22px;
+    border-radius: 8px;
 }
