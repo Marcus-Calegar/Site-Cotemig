@@ -41,7 +41,7 @@ a {
 
 h2 {
     display: block;
-    font-size: 1.5em;
+    font-size: 40px;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
     margin-inline-start: 0px;
@@ -118,7 +118,6 @@ footer a {
 
 #banner-2 {
     width: 100%;
-    max-width: 73.9375em;
 }
 
 #banner-2 h2 {
@@ -164,16 +163,65 @@ footer a {
     color: #111;
 }
 
-#Ensino div {
-    align-items: center;
+#Ensino div div {
     display: flex;
+    align-items: center;
     flex-direction: column;
-    border-radius: 0.75em;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, .1);
     width: 284px;
 }
 
-#Curso figure img,
+#Ensino div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#Curso {
+    margin-left: 150px;
+    margin-right: 50px;
+    margin-top: -20px;
+}
+
+#Graduacoes {
+    margin-top: 40px;
+}
+
+#Curso-img {
+    background: url(/Assets/imagens/Curso.png);
+    background-size: cover;
+    transition: all .2s linear;
+    height: 175px;
+    border-top-right-radius: 0.75em;
+    border-top-left-radius: 0.75em;
+    margin-bottom: 5px;
+}
+
+#Curso-img h3,
+#Graduacoes-img h3 {
+    font-size: 20px;
+    color: white;
+    padding: 1em;
+    margin-top: 115px;
+    margin-right: 15px;
+    text-align: left;
+}
+
+#Graduacoes-img h3 {
+    margin-right: 129px;
+}
+
+#Graduacoes-img {
+    background: url(/Assets/imagens/Graduacoes.png);
+    background-size: cover;
+    transition: all .2s linear;
+    height: 175px;
+    border-top-right-radius: 0.75em;
+    border-top-left-radius: 0.75em;
+    margin-bottom: 5px;
+}
+
+#Curso img,
 #Graduacoes img {
     width: 284px;
 }
@@ -189,6 +237,13 @@ footer a {
     display: flex;
     flex-direction: row;
     text-align: left;
+    padding: 5px;
+}
+
+#Curso ul li h4,
+#Graduacoes ul li h4 {
+    padding-top: 15px;
+    padding-left: 5px;
 }
 
 #Graduacoes img,
@@ -197,19 +252,37 @@ footer a {
     border-top-left-radius: 0.75em;
 }
 
+#Nossas-Unidades {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 32px;
+}
+
 #Nossas-Unidades img {
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
 }
 
-#Nossas-Unidades {
-    display: flex;
-    justify-content: center;
-}
-
 #Nossas-Unidades p {
     margin: 0%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
     text-align: left;
+    line-height: 32px;
+}
+
+#Nossas-Unidades h4 {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #424242;
+}
+
+#Barroca h4 {
+    padding-right: 0px;
 }
 
 #Nossas-Unidades div {
@@ -247,21 +320,64 @@ footer a {
 #Workshop {
     background: url(/Assets/imagens/workshop.png);
     background-size: cover;
+    box-shadow: inset 0px -17px 50px -16px black;
+    transition: all .2s linear;
+}
+
+#Workshop h3 {
+    color: white;
+    text-align: left;
+    font-size: 16px;
+    line-height: 23px;
+    padding-top: 75%;
+    padding-left: 10px;
+}
+
+#Workshop img {
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    object-fit: cover;
+
+}
+
+#Workshop:hover,
+#Sinepe:hover,
+#Valley:hover,
+#Visita:hover {
+    margin-top: -0.7em;
 }
 
 #Sinepe {
     background: url(/Assets/imagens/sinepe.jpg);
     background-size: cover;
+    box-shadow: inset 0px -17px 50px -16px black;
+    transition: all .2s linear;
+}
+
+#Sinepe h3,
+#Valley h3,
+#Visita h3 {
+    color: white;
+    text-align: left;
+    font-size: 16px;
+    line-height: 23px;
+    padding-top: 85%;
+    padding-left: 10px;
 }
 
 #Valley {
     background: url(/Assets/imagens/raja-valley.png);
     background-size: cover;
+    box-shadow: inset 0px -17px 50px -16px black;
+    transition: all .2s linear;
 }
 
 #Visita {
     background: url(/Assets/imagens/visita.png);
     background-size: cover;
+    box-shadow: inset 0px -17px 50px -16px black;
+    transition: all .2s linear;
 }
 
 #noticias-novidades {
@@ -473,19 +589,3 @@ footer a {
     padding: 0px 15px;
     margin-bottom: 15px;
 }
-
-/*
-.Facebook::before {
-    background-color: #4460a0;
-    width: 100%;
-    height: 4em;
-}
-
-.Facebook span {
-    padding: 0%;
-    margin: 0%;
-    background-color: #151515;
-    color: #424242;
-    font-size: 11px;
-}
-*/
