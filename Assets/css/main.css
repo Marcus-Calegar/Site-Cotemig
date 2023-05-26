@@ -62,7 +62,7 @@ footer .container {
     grid-template-areas:
         "a a b"
         "c d e";
-    grid-template-columns: 490.22px 245.11px 383.67px;
+    grid-template-columns: 425px 425px 425px;
     justify-content: center;
 }
 
@@ -72,7 +72,6 @@ footer ul li {
 }
 
 footer a {
-    background-color: #40aa0b;
     border-radius: 8px;
 }
 
@@ -341,23 +340,59 @@ footer a {
     grid-area: c;
 }
 
+#Logo-footer p {
+    margin: 0px;
+    font-size: 12px;
+    text-align: left;
+    font-style: normal;
+    padding-top: 1.5%;
+}
+
 #rede-social-colegio {
     grid-area: d;
+    padding: 25px;
 }
 
 #rede-social-faculdade {
     grid-area: e;
+    padding: 25px;
+}
+
+#rede-social-colegio p,
+#rede-social-faculdade p {
+    width: 330px;
+    margin: 0;
+    text-align: left;
+    height: 19px;
+    margin-bottom: 5px;
+}
+
+#rede-social-colegio strong,
+#rede-social-faculdade strong {
+    font-size: 16px;
+    font-style: normal;
 }
 
 #rede-social-colegio ul,
 #rede-social-faculdade ul {
     display: flex;
     flex-direction: row;
+    grid-gap: 1.25em;
+    margin: 1.25em 0;
+}
+
+#rede-social-colegio ul li,
+#rede-social-faculdade ul li {
+    margin: 0;
+    padding: 0;
+    width: 68px;
+    height: 66px;
+    text-align: center;
+
 }
 
 #rede-social-faculdade a,
 #rede-social-colegio a {
-    background-color: #151515;
     text-decoration: none;
     color: #424242;
     font-size: 11px;
@@ -406,7 +441,6 @@ footer a {
 }
 
 .seta-baixo {
-    content: "";
     display: flex;
     align-items: center;
     margin-left: 5px;
@@ -420,7 +454,6 @@ footer a {
     width: 278px;
     height: 324px;
     border-radius: 5%;
-
 }
 
 .container #noticias-novidades {
@@ -440,3 +473,19 @@ footer a {
     padding: 0px 15px;
     margin-bottom: 15px;
 }
+
+/*
+.Facebook::before {
+    background-color: #4460a0;
+    width: 100%;
+    height: 4em;
+}
+
+.Facebook span {
+    padding: 0%;
+    margin: 0%;
+    background-color: #151515;
+    color: #424242;
+    font-size: 11px;
+}
+*/
